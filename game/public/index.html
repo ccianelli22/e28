@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E28 HI-LOW</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="flex flex-col h-screen text-gray-700 bg-gray-100"
+      id="container-main"
+    >
+      <div class="m-4">
+        <div class="flex justify-center items-center">
+          <h1 class="text-5xl font-semibold text-center">PLAY HI-LOW</h1>
+          <button
+            class="p-1 ml-4 duration-200 ease-in-out border-2 border-gray-300 border-solid rounded-lg hover:bg-blue-600 hover:text-white"
+            id="button-rules"
+            onclick="toggleRules()"
+            type="button"
+          >
+            Show Rules
+          </button>
+        </div>
+        <div
+          class="invisible opacity-0 ease-in-out mt-8 items-center flex flex-col duration-700 transition"
+          id="container-rules"
+        >
+          <h3 class="text-2xl text-red-600">Rules</h3>
+          <ol class="list-decimal list-inside text-left">
+            <li>
+              The goal of the game is to guess the
+              <span class="italic">"secret number"</span>
+              between 1 to 10
+            </li>
+            <li>You will only have 3 guesses</li>
+            <li>After 3 incorrect guesses you will lose the game</li>
+            <li>Refresh the page to start over</li>
+            <li>HAVE FUN AND GOODLUCK!</li>
+          </ol>
+        </div>
+        <div class="flex flex-col items-center" id="container-game">
+          <div class="invisible my-8" id="container-attempts">
+            <h3 class="text-red-700 italic text-xl">YOU'RE FAILED ATTEMPTS:</h3>
+          </div>
+
+          <div class="flex items-baseline">
+            <label class="text-red-700 font-semibold italic text-xl">
+              What is your guess:
+            </label>
+            <input
+              class="ml-4 bg-gray-100 hover:bg-blue-200 border-2 border-gray-300 border-solid"
+              id="input-answer"
+              max="10"
+              min="1"
+              onchange="answerInput()"
+              type="number"
+            />
+          </div>
+          <div>
+            <button
+              id="button-submit"
+              class="p-1 mt-8 self-center duration-200 ease-in-out border-2 border-gray-300 border-solid rounded-lg hover:bg-blue-600 hover:text-white"
+              onclick="submitAnswer()"
+              type="button"
+            >
+              Submit Answer
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../src/index.js"></script>
+</html>
