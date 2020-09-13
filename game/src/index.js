@@ -75,5 +75,3 @@ const answerInput = () => {
     main.removeChild(fChild)
   }
 }
-
-//dsfasdfafds
