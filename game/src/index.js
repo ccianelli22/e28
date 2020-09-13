@@ -20,7 +20,7 @@ const toggleRules = () => {
 
 const hiLow = (num) => {
   let response = num > computerNumer ? "GREATER THAN" : "LESS THAN"
-  return `YOU'RE NUMBER WAS ${response} MY SECRET NUMBER`
+  return `YOUR NUMBER WAS ${response} MY SECRET NUMBER`
 }
 
 const submitAnswer = () => {
