@@ -18,6 +18,11 @@ const toggleRules = () => {
 }
 
 
+const hiLow = (num) => {
+  let response = num > computerNumer ? "GREATER THAN" : "LESS THAN"
+  return `YOU'RE NUMBER WAS ${response} MY SECRET NUMBER`
+}
+
 const submitAnswer = () => {
   let answer = document.getElementById("input-answer")
   let submitButton = document.getElementById("button-submit")
@@ -47,7 +52,7 @@ const submitAnswer = () => {
       spanTag.innerText = answer.value.toString()
       attemptsCont.appendChild(spanTag)
       if (triedAttempts.length < maxAttempts) {
-        pTag.innerText = "INCORRECT TRY AGAIN"
+        pTag.innerText = hiLow(answer.value)
       } else {
         pTag.innerText = `YOU LOSE! ${computerNumer} WAS MY SECRET NUMBER! REFRESH TO TRY YOUR LUCK AGAIN`
         gameOver = true
@@ -70,3 +75,5 @@ const answerInput = () => {
     main.removeChild(fChild)
   }
 }
+
+//dsfasdfafds
