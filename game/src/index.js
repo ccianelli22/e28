@@ -20,7 +20,7 @@ const toggleRules = () => {
 
 //provides response for first and second attempts
 const hiLow = (num) => {
-	let response = num > computerNumer ? "GREATER THAN" : "LESS THAN"
+	let response = num > computerNumer.toString() ? "GREATER THAN" : "LESS THAN"
 	return `YOUR NUMBER WAS ${response} MY SECRET NUMBER`
 }
 
@@ -34,7 +34,7 @@ const submitAnswer = () => {
 	if (triedAttempts.includes(answer.value)) {
 		alert(`You have already chosen ${answer.value}. You must choose another!`)
 	} else {
-		if (answer.value === computerNumer) {
+		if (answer.value === computerNumer.toString()) {
 			pTag.className += " text-green-600"
 			pTag.innerText = "CONGRATULATIONS YOU WIN! REFRESH TO TRY YOUR LUCK AGAIN"
 			gameOver = true
