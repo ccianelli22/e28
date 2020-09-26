@@ -7,7 +7,7 @@
 
 - TailwindCSS
      - (CSS Framework)
-- Favicon from [here](https://pixabay.com/vectors/controller-pad-video-game-1294077/)
+- Favicon from [here](https://pixabay.com/photos/game-controller-joystick-joypad-1532747/)
 - Vampire used for Mystery Word [here](https://pixabay.com/vectors/blood-dracula-evil-holiday-horror-1296035//)
 - Boy running away used for Mystery Word [here](https://pixabay.com/vectors/kid-boy-fear-afraid-child-running-160097/)
 - Sleeping man used for Mystery Word [here](https://pixabay.com/vectors/sleep-sleeping-asleep-1389978/)
