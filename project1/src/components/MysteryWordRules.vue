@@ -1,5 +1,5 @@
 <template>
-	<div class="self-center">
+	<div class="flex justify-center mt-2">
 		<ul class="list-disc list-inside text-start">
 			<li>
 				You will have 6 attempts to guess any letter in the word

@@ -9,7 +9,7 @@
 					{{ props.header }}
 				</h3>
 				<button
-					class="p-1 text-sm mx-2 hover:text-orange-500 hover:bg-black self-start transition-color duration-300 rounded-full"
+					class="p-1 text-sm mx-2 hover:text-black hover:bg-orange-500 self-start transition-color duration-300 rounded-full"
 					type="button"
 					@click="modalFunc.closeModal"
 				>
