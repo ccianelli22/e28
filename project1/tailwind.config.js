@@ -3,12 +3,12 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'print': {'raw': 'print'},
+        print: { raw: "print" }
       }
-    },
+    }
   },
   variants: {
     borderRadius: ["responsive", "hover"]
   },
-  plugins: [],
-}
+  plugins: []
+};
