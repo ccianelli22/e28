@@ -4,17 +4,18 @@
 			id="modalContainer"
 			class="flex overflow-y-auto top-0 flex-col bg-black text-orange-500 w-3/4 lg:text-xl xl:w-3/4 mx-24 xl:mx-48 mt-4 absolute border-2 border-gray-200 border-solid font-semibold transition opacity-0 duration-300"
 		>
-			<button
-				class="p-1 m-1 text-sm hover:bg-black hover:text-orange-500 self-end rounded-full"
-				type="button"
-				@click="modalFunc.closeModal"
-			>
-				X
-			</button>
-
-			<h3 class="text-center text-xl lg:text-3xl underline italic -my-4 mb-2">
-				{{ props.header }}
-			</h3>
+			<div class="flex flex-row my-2 items-baseline">
+				<h3 class="mx-auto text-xl lg:text-3xl underline italic mb-2">
+					{{ props.header }}
+				</h3>
+				<button
+					class="p-1 text-sm mx-2 hover:text-orange-500 hover:bg-black self-start transition-color duration-300 rounded-full"
+					type="button"
+					@click="modalFunc.closeModal"
+				>
+					X
+				</button>
+			</div>
 
 			<slot name="child"></slot>
 		</div>
