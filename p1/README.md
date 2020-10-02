@@ -1,19 +1,18 @@
-# p1
+# Project 1
 
-## Project setup
-```
-npm install
-```
+- By: Christopher Cianelli
+- Production URL: <http://e28p1.hesccian.me>
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Outside resources
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- TailwindCSS
+     - (CSS Framework)
+- Favicon from [here](https://pixabay.com/photos/game-controller-joystick-joypad-1532747/)
+- Vampire used for Mystery Word [here](https://pixabay.com/vectors/blood-dracula-evil-holiday-horror-1296035//)
+- Boy running away used for Mystery Word [here](https://pixabay.com/vectors/kid-boy-fear-afraid-child-running-160097/)
+- Sleeping man used for Mystery Word [here](https://pixabay.com/vectors/sleep-sleeping-asleep-1389978/)
+- Vue 3 Documentation [Vue3](https://v3.vuejs.org/)
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Notes for instructor
+
+-Utilizing Vue 3 new composition api and Vue Router. I was going to use VUEX but with the composition api, VUEX seems unecessary.
