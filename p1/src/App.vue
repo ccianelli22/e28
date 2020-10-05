@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-col ">
-		<div class="bg-orange-500">
+		<div class="bg-black text-orange-500">
 			<div class="grid grid-cols-3 text-center">
 				<!-- USER INFORMATION -->
 				<div class="col-span-1">
@@ -30,15 +30,15 @@
 			</div>
 			<div class="flex flex-row items-baseline justify-evenly">
 				<button
-					class=" rounded m-2 p-1 hover:bg-black hover:text-orange-500 transition-colors duration-300"
+					class=" rounded m-2 p-1 hover:bg-orange-500 hover:text-black transition-colors duration-300"
 				>
 					<router-link to="/">
-						GO HOME
+						Go Home
 					</router-link>
 				</button>
 				<button
 					id="history"
-					class=" rounded m-2 p-1 hover:bg-black hover:text-orange-500 transition-colors duration-300"
+					class=" rounded m-2 p-1 hover:bg-orange-500 hover:text-black transition-colors duration-300"
 					@click="modalFunc.openModal"
 				>
 					History

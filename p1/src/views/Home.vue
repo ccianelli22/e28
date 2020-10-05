@@ -6,23 +6,23 @@
 				Please enter your name
 			</p>
 			<input
-				class="my-2 border-2 border-solid border-gray-300 hover:bg-blue-200"
+				class="my-2 border-2 border-solid  border-black hover:bg-blue-200"
 				maxlength="20"
 				v-model="gameData.username"
 			/>
 			<button
 				@click="resetGame"
-				class="border-2 my-2 border-solid border-gray-300 rounded-lg p-1 hover:bg-red-700 hover:text-gray-100 duration-300 transition-colors"
+				class="border-2 my-2 border-solid border-black rounded-lg p-1 hover:bg-red-700 hover:text-gray-100 duration-300 transition-colors"
 				type="button"
 			>
 				Reset
 			</button>
 		</div>
 		<div class="flex flex-col items-center">
-			<p>Select which game you would like to play!</p>
+			<p>Select which game you would like to play</p>
 			<div class="flex flex-row justify-between">
 				<button
-					class="p-1 w-32 mx-5 rounded border-2 border-gray-300 border-solid hover:bg-orange-500 hover:text-gray-100 duration-300 transition-colors"
+					class="p-1 w-32 mx-5 rounded border-2 border-black border-solid hover:bg-black hover:text-orange-500 duration-300 transition-colors"
 					type="button"
 				>
 					<router-link to="/MysteryWord">
@@ -30,7 +30,7 @@
 					</router-link>
 				</button>
 				<button
-					class="p-1 w-32 mx-5 rounded border-2 border-gray-300 border-solid hover:bg-purple-600 hover:text-gray-100 duration-300 transition-colors"
+					class="p-1 w-32 mx-5 rounded border-2 border-black border-solid hover:bg-purple-600 hover:text-gray-100 duration-300 transition-colors"
 					type="button"
 				>
 					<router-link to="/Trivia">Trivia</router-link>

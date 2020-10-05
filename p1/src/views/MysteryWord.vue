@@ -33,14 +33,14 @@
 				v-if="!mysteryWordGame.winner"
 			>
 				<input
-					class="border-2 p-2 border-gray-300 border-solid hover:bg-orange-300 duration-300 transition-colors"
+					class="border-2 p-2 border-black border-solid hover:bg-orange-300 duration-300 transition-colors"
 					type="text"
 					maxlength="1"
 					v-model="mysteryWordGame.letterInput"
 					@keyup.enter="submit"
 				/>
 				<button
-					class="ml-4 p-2 rounded border-2 border-gray-300 border-solid hover:bg-orange-500 duration-300 transition-colors"
+					class="ml-4 p-2 rounded border-2 border-black border-solid hover:bg-orange-500 duration-300 transition-colors"
 					type=" button"
 					@click="submit"
 				>
@@ -61,12 +61,12 @@
 				YOU ESCAPED WITH YOUR LIFE
 			</h3>
 			<div class="flex flex-col items-baseline mt-6 self-center">
-				<h5 class="text-xl text-red-600 font-semibold">
+				<h5 class="text-xl text-purple-600 font-semibold">
 					Letters tried
 				</h5>
 				<div class="flex flex-row">
 					<span
-						class="text-sm mx-2 text-red-600 font-semibold"
+						class="text-sm mx-2 text-purple-600 font-semibold"
 						v-for="(letters,
 						index) in mysteryWordGame.lettersTried"
 						:key="index"
@@ -82,18 +82,18 @@
 			v-else
 		>
 			<p class="font-semibold italic">
-				How many letters do you want your word to be?
+				How many letters do you want your word to have?
 			</p>
 			<div class="flex mt-4 text-center">
 				<input
-					class="p-2 mr-4 rounded-full border-2 border-solid border-gray-300 hover:bg-orange-300 duration-300 transition-colors"
+					class="p-2 mr-4 rounded-full border-2 border-solid border-black hover:bg-orange-300 duration-300 transition-colors"
 					type="number"
 					min="3"
 					max="12"
 					v-model="mysteryWordGame.numberFilter"
 				/>
 				<button
-					class="p-2 rounded-full border-2 border-solid border-gray-300 hover:bg-orange-500 duration-300 transition-colors"
+					class="p-2 rounded-full border-2 border-solid border-black hover:bg-black hover:text-orange-500 duration-300 transition-colors"
 					type="button"
 					@click="startGame"
 				>

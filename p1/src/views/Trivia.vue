@@ -9,7 +9,7 @@
 				src="../assets/triviaImages/skeletons.png"
 			/>
 			<p
-				class="border-2 border-gray-300 border-dotted p-2 relative float-right -mt-32 mr-48 text-xl font-semibold text-green-600"
+				class="border-2 border-black border-dotted p-2 relative float-right -mt-32 mr-48 text-xl font-semibold text-green-600"
 				v-if="triviaGame.winner === gameData.username"
 			>
 				Darn we didn't know the answer was
@@ -17,7 +17,7 @@
 				<span class="italic">{{ triviaGame.answer }}</span>
 			</p>
 			<p
-				class="border-2 border-gray-300 border-dotted p-2 relative -mt-32 mr-56 float-right font-semibold text-red-600 text-xl"
+				class="border-2 border-black border-dotted p-2 relative -mt-32 mr-56 float-right font-semibold text-red-600 text-xl"
 				v-else-if="triviaGame.winner === 'computer'"
 			>
 				haha we knew the answer was
@@ -44,7 +44,7 @@
 			</div>
 			<div class="mx-auto flex flex-col">
 				<div
-					class="flex flex-row w-full my-2 items-baseline hover:bg-blue-100"
+					class="flex flex-row w-full my-2 items-baseline hover:bg-purple-600"
 					v-for="(guess,
 					index) in triviaGame.possibleAnswers"
 					:key="index"
@@ -62,7 +62,7 @@
 					</label>
 				</div>
 				<button
-					class="bg-orange-500 font-semibold hover:bg-black hover:text-orange-500 xl:text-xl duration-300 transition-colors border-2 rounded p-2 self-center"
+					class="bg-orange-500 font-semibold hover:bg-black hover:text-orange-500 xl:text-xl duration-300 transition-colors border-2 border-black border-solid rounded p-2 self-center"
 					@click="submitAnswer"
 					type="button"
 				>

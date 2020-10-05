@@ -5,19 +5,22 @@
 				You will have 6 attempts to guess any letter in the word
 			</li>
 			<li>
-				If you cannot guess the letters in the word then you lose and the
-				computer will get a point
+				Each Round is worth 1 point
 			</li>
 			<li>
-				If you guess all of the letters in the word then you win and will
-				gain a point
+				If you cannot correctly guess the letters in the word then
+				the computer wins the round
 			</li>
 			<li>
-				You can change the amount of letters in the word from 3-12 on the
-				home page.
+				If you correctly guess all of the letters in the word then
+				you win the round
 			</li>
 			<li>
-				Have Fun
+				You can change the amount of letters in the word on the
+				games homepage.
+			</li>
+			<li>
+				Have Fun!
 			</li>
 		</ul>
 	</div>
