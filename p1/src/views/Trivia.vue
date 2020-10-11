@@ -105,6 +105,7 @@ export default {
 			category: "",
 			answer: "",
 			currentQuestion: "",
+			questionNum: 48,
 			possibleAnswers: [],
 			userAnswer: "",
 			winner: "",
@@ -125,13 +126,21 @@ export default {
 			}
 		})
 
+		const resetQuestionNum = (num) => {
+			if (num > triviaGame.allQuestions.length - 1) {
+				return 0
+			}
+			return num
+		}
+
 		const grabQuestion = () => {
 			if (startGame.value) {
-				let num = Math.round(
-					Math.random() * triviaGame.allQuestions.length -
-						1,
+				triviaGame.questionNum = resetQuestionNum(
+					triviaGame.questionNum,
 				)
-				let question = triviaGame.allQuestions[num]
+				console.log(triviaGame.questionNum)
+				let question =
+					triviaGame.allQuestions[triviaGame.questionNum]
 				triviaGame.currentPick = question
 				triviaGame.currentQuestion = atob(question.question)
 				triviaGame.answer = atob(question.correct_answer)
@@ -143,6 +152,7 @@ export default {
 					),
 				]
 				triviaGame.possibleAnswers = combinedArray.sort()
+				triviaGame.questionNum += 1
 			}
 		}
 
