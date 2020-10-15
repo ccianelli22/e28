@@ -5,7 +5,7 @@
 				You will have 6 attempts to guess any letter in the word
 			</li>
 			<li>
-				Each Round is worth 1 point
+				Each round is worth 1 point
 			</li>
 			<li>
 				If you cannot correctly guess the letters in the word then

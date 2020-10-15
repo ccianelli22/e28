@@ -9,7 +9,7 @@
 				src="../assets/triviaImages/skeletons.png"
 			/>
 			<p
-				class="border-2 border-black border-dotted p-2 relative float-right -mt-32 mr-48 text-xl font-semibold text-green-600"
+				class="border-2 border-black border-dotted p-2 relative float-right -mt-32 mr-48 text-xl font-semibold text-green-700"
 				v-if="triviaGame.winner === gameData.username"
 			>
 				Darn we didn't know the answer was
@@ -17,7 +17,7 @@
 				<span class="italic">{{ triviaGame.answer }}</span>
 			</p>
 			<p
-				class="border-2 border-black border-dotted p-2 relative -mt-32 mr-56 float-right font-semibold text-red-600 text-xl"
+				class="border-2 border-black border-dotted p-2 relative -mt-32 mr-56 float-right font-semibold text-red-700 text-xl"
 				v-else-if="triviaGame.winner === 'computer'"
 			>
 				haha we knew the answer was
