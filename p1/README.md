@@ -6,7 +6,8 @@
 ## Outside resources
 
 - TailwindCSS
-     - (CSS Framework)
+     - (CSS Framework)[docs](https://tailwindcss.com/)
+- Trivia API from [https://opentdb.com/browse.php](https://opentdb.com/browse.php)
 - Favicon from [here](https://pixabay.com/photos/game-controller-joystick-joypad-1532747/)
 - Vampire used for Mystery Word [here](https://pixabay.com/vectors/blood-dracula-evil-holiday-horror-1296035//)
 - Boy running away used for Mystery Word [here](https://pixabay.com/vectors/kid-boy-fear-afraid-child-running-160097/)
