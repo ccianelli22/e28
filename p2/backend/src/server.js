@@ -18,16 +18,13 @@ MongoClient.connect(
 		//USE FOR PRODUCTION BUILD
 		app.use(
 			express.static(
-				path.join(
-					__dirname.split("\\backend")[0],
-					"frontend/dist",
-				),
+				path.join(__dirname.split("backend")[0], "frontend/dist"),
 			),
 		)
 		app.get("*", (req, res) => {
 			res.sendFile(
 				path.join(
-					__dirname.split("\\backend")[0],
+					__dirname.split("backend")[0],
 					"frontend/dist",
 					"index.html",
 				),
