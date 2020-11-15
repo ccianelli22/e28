@@ -19,7 +19,7 @@ MongoClient.connect(
 			express.static(
 				path.join(
 					__dirname.split("\\backend")[0],
-					"frontend/build",
+					"frontend/dist",
 				),
 			),
 		)
