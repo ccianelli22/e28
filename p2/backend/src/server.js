@@ -1,5 +1,6 @@
 const dotenv = require("dotenv")
 dotenv.config({ path: `${__dirname}/config/config.env` })
+const path = require("path")
 const express = require("express")
 const MongoClient = require("mongodb").MongoClient
 const app = require("./app")
