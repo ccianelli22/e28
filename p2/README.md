@@ -57,7 +57,6 @@
 - MongoDB nodeJS Driver (driver to interact with mongoDB using nodeJS)
 - dotENV (module to store and read .env files)
 - argon2 (NodeJS hashing Module)
--
 - [Favicon](https://pixabay.com/illustrations/learning-hint-school-subject-3245793/)
 - [Logo](<[https://link](https://pixabay.com/illustrations/businessman-cartoons-training-607831/)>)
 - [Calculator Image](https://pixabay.com/vectors/school-school-supplies-education-1555910/)
