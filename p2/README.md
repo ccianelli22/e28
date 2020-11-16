@@ -40,7 +40,7 @@
 - MathPracticeMultiply.vue
 - MathPracticeSubtract.vue
 - MathHome.vue
-- NotFound.vue (Catch all if user enters route not that are not enabled on the server.)
+- NotFound.vue (Catch all if user enters route that is not enabled on the server.)
 
 ## Server interaction
 
