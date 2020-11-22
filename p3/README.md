@@ -1,7 +1,7 @@
 # Project 2
 
 - By: Christopher Cianelli
-- Production URL: <http://e28p2.hesccian.me>
+- Production URL: <http://e28p2.ccianhes.com>
 
 ## Pages summary
 
