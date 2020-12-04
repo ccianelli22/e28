@@ -2,6 +2,9 @@ const express = require("express")
 const hash = require("../../../methods/hash")
 const router = express.Router()
 
+//REQUEST.BODY contains email address, password, and role..
+// strip away the @fbi.sgov.gov which will be the user
+
 router.post("/", async (request, response) => {
 	let userInfo = { ...request.body }
 	let userEmail = userInfo.email
