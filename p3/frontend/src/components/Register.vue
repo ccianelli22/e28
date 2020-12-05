@@ -43,17 +43,22 @@
 				</div>
 			</div>
 
-			<button class="mx-10" @click="registerUser">
+			<button
+				class="p-2 mx-10 transition-colors duration-200 hover:bg-green-600 hover:text-gray-100"
+				@click="registerUser"
+			>
 				Register
 			</button>
 		</div>
 	</div>
 </template>
 <script>
-	import { reactive, ref } from "vue"
+	import { reactive, inject, ref } from "vue"
 	import apiPost from "@/util/apiPost"
 	export default {
 		setup() {
+			const modalFunc = inject("modalFunc")
+			const closeModal = modalFunc.closeModal
 			const register = reactive({
 				username: "",
 				password: "",
@@ -63,7 +68,7 @@
 			const onInput = () => {
 				errors.value = []
 			}
-			const registerUser = () => {
+			const registerUser = async () => {
 				let errorFound = false
 				if (!register.username) {
 					errors.value.push("Username cannot be blank")
@@ -80,8 +85,29 @@
 					errorFound = true
 				}
 				if (!errorFound) {
-					let submit = apiPost(register, "/api/register")
-					console.log(submit)
+					try {
+						let submit = await apiPost(
+							register,
+							"/api/registration",
+						)
+						console.log(submit)
+						if (submit.status === 200) {
+							alert(submit.data.msg)
+							alert(
+								"Please write down your secret key for your records. If you lose this key you will not be able to login and will have to register a new account!",
+							)
+						}
+					} catch (e) {
+						if (e.response.status === 405) {
+							alert(e.response.data.msg)
+						} else {
+							alert(
+								"An error has occured please try again later",
+							)
+							console.log(e)
+						}
+					}
+					closeModal()
 				}
 			}
 			return {

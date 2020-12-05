@@ -16,20 +16,20 @@ MongoClient.connect(
 		})
 		if (err) throw err
 		//USE FOR PRODUCTION BUILD
-		app.use(
-			express.static(
-				path.join(__dirname.split("backend")[0], "frontend/dist"),
-			),
-		)
-		app.get("*", (req, res) => {
-			res.sendFile(
-				path.join(
-					__dirname.split("backend")[0],
-					"frontend/dist",
-					"index.html",
-				),
-			)
-		})
+		// app.use(
+		// 	express.static(
+		// 		path.join(__dirname.split("backend")[0], "frontend/dist"),
+		// 	),
+		// )
+		// app.get("*", (req, res) => {
+		// 	res.sendFile(
+		// 		path.join(
+		// 			__dirname.split("backend")[0],
+		// 			"frontend/dist",
+		// 			"index.html",
+		// 		),
+		// 	)
+		// })
 		app.listen(PORT, () =>
 			console.log(`Express server is running on ${PORT}`),
 		)

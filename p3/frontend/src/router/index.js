@@ -12,10 +12,14 @@ import EditFlashCardsHome from "../views/flashCards/EditFlashCardsHome"
 import EditFlashCard from "../views/flashCards/EditFlashCard"
 import Login from "../views/Login"
 import NotFound from "../views/NotFound"
-
+import store from "../store/index"
 const routes = [
 	{
 		path: "/",
+		redirect: "/login",
+	},
+	{
+		path: "/login",
 		component: Login,
 	},
 	{
@@ -77,6 +81,24 @@ const routes = [
 const router = createRouter({
 	history: createWebHistory(process.env.BASE_URL),
 	routes,
+})
+
+router.beforeEach((to, from, next) => {
+	if (to.path !== "/login") {
+		if (store.state.loggedIn === true) {
+			next()
+		} else {
+			next("/login")
+			console.log("NOT LOGGED IN")
+			console.log(store.state)
+		}
+	} else if (to.path === "/login") {
+		if (store.state.loggedIn === true) {
+			next("/math")
+		} else {
+			next()
+		}
+	}
 })
 
 export default router
