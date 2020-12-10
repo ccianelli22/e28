@@ -37,6 +37,7 @@
 			<div>
 				<button
 					class="p-1 m-1 transition-colors duration-200 hover:bg-green-600 hover:text-gray-100"
+					name="submit"
 					@click.prevent="onSubmit"
 					v-if="problem.submitted === false"
 				>

@@ -45,6 +45,7 @@
 			<div class="flex items-baseline my-3">
 				<button
 					class="p-2 mx-10 transition-colors duration-200 hover:bg-blue-600 hover:text-gray-100"
+					name="signIn"
 					@click.prevent="signIn"
 				>
 					Sign In
